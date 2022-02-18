@@ -1,0 +1,31 @@
+.clients {
+  @media screen and (max-width: 767px) {
+    --card-set-item: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    --card-set-item: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-set-item: 6;
+  }
+}
+
+.clients__link {
+  color: var(--icons-color);
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  justify-content: center;
+  @include align-list;
+  transition: color var(--animation-time) var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}

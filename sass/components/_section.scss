@@ -1,0 +1,29 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--second-title-color);
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
